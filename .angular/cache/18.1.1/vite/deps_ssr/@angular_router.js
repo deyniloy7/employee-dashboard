@@ -1,7 +1,7 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
   Title
-} from "./chunk-GTZKFBD3.js";
+} from "./chunk-NKZFETQF.js";
 import {
   DOCUMENT,
   HashLocationStrategy,
