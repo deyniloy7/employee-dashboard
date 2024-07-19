@@ -5,7 +5,11 @@
 .mat-sidenav-container {
     height: 100vh;
     .mat-sidenav {
-        background: green;
+        background: white;
         border-radius: 0;
+        color: green;
+        .mat-mdc-list-item {
+            color: green;
+        }
     }
 }
