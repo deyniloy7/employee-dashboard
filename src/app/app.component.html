@@ -9,7 +9,12 @@
 
 <main class="main">
   <div class="content">
-    <app-dashboard></app-dashboard>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav mode="push">Start</mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet />
+      </mat-sidenav-content>
+    </mat-sidenav-container>
   </div>
 </main>
 
@@ -21,5 +26,3 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-<router-outlet />
