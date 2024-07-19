@@ -10,7 +10,7 @@
 <main class="main">
   <div class="content">
     <mat-sidenav-container>
-      <mat-sidenav #sidenav mode="push">
+      <mat-sidenav opened="true" disableClose="true" #sidenav mode="push">
         <mat-list>
           <div mat-subheader>Folders</div>
           @for (folder of folders; track folder) {
@@ -20,7 +20,6 @@
               <div matListItemLine>{{folder.updated | date}}</div>
             </mat-list-item>
           }
-          <mat-divider></mat-divider>
           <div mat-subheader>Notes</div>
           @for (note of notes; track note) {
             <mat-list-item>
@@ -32,6 +31,7 @@
         </mat-list>
       </mat-sidenav>
       <mat-sidenav-content>
+        <app-top-nav></app-top-nav>
         <router-outlet />
       </mat-sidenav-content>
     </mat-sidenav-container>

@@ -1,15 +1,21 @@
 .main {
-    height: 100vh;
+  height: 100vh;
 }
 
 .mat-sidenav-container {
-    height: 100vh;
-    .mat-sidenav {
-        background: white;
-        border-radius: 0;
-        color: green;
-        .mat-mdc-list-item {
-            color: green;
-        }
+  height: 100vh;
+  .mat-sidenav {
+    background: white;
+    border-radius: 0;
+    color: green;
+
+    .mdc-list-item * {
+      color: green;
     }
+  }
+
+  .mat-drawer-backdrop.mat-drawer-shown {
+    visibility: visible;
+    background: none;
+  }
 }

@@ -5,6 +5,7 @@ import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import { TopNavComponent } from './components/top-nav/top-nav.component';
 export interface Section {
   name: string;
   updated: Date;
@@ -21,6 +22,7 @@ export interface Section {
     MatListModule, 
     MatIconModule, 
     MatDividerModule,
+    TopNavComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
